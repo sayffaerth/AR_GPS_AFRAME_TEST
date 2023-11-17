@@ -24,18 +24,5 @@
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
-  <script>
-    if ("geolocation" in navigator) {
-      console.log("Location is not available.")
-      navigator.geolocation.getCurrentPosition(function(position) {
-        // The user's latitude and longitude are in position.coords.latitude and position.coords.longitude
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-
-        console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-      });
-    } else {
-      console.log("Location is not available.")
-    }
-  </script>
+  <script src="main.js"></script>
 </html>
