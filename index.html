@@ -26,12 +26,15 @@
   </body>
   <script>
     if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        consol.log(position.coords.latitude, position.coords.longitude);
+      navigator.geolocation.getCurrentPosition(function(position) {
+        // The user's latitude and longitude are in position.coords.latitude and position.coords.longitude
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
       });
     } else {
       console.log("Location is not available.")
     }
-
   </script>
 </html>
