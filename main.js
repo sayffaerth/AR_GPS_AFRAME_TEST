@@ -26,7 +26,7 @@
               console.error("An unknown error occurred.");
               break;
       }
-    }); 
+    }); */
 
     window.onload = () => {
         let testEntityAdded = false;
@@ -39,9 +39,9 @@
                 // Add a box to the north of the initial GPS position
                 const entity = document.createElement("a-box");
                 entity.setAttribute("scale", {
-                    x: 20, 
-                    y: 20,
-                    z: 20
+                    x: 50, 
+                    y: 50,
+                    z: 50
                 });
                 entity.setAttribute('material', { color: 'red' } );
                 entity.setAttribute('gps-new-entity-place', {
@@ -53,4 +53,4 @@
             testEntityAdded = true;
         });
     };
-    */
+    
