@@ -26,7 +26,7 @@
               console.error("An unknown error occurred.");
               break;
       }
-    }); */
+    }); 
 
     window.onload = () => {
         let testEntityAdded = false;
@@ -53,4 +53,4 @@
             testEntityAdded = true;
         });
     };
-    
+    */
